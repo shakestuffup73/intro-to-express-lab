@@ -11,6 +11,7 @@ const app = express()
 
 // configure the app (app.set)
 
+app.set('view engine', 'ejs')
 
 
 // Mount middleware
@@ -22,6 +23,11 @@ app.get('/', function(req, res){
   res.send('<h1>hello, friend</h1>')
 })
 
+app.get('/students', function(req, res){
+  res.render('students/index', {
+    students: students
+  })
+})
 
 // Tell the app to listen on port 3000
 

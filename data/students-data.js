@@ -3,7 +3,6 @@ const students = [
   {name: 'Damian', annoying: false, favFruit: 'banana'},
   {name: 'Nate', annoying: false, favFruit: 'apple'},
   {name: 'Maddie', annoying: false, favFruit: 'grapes'},
-  {name: ''}
 ]
 
 export {
