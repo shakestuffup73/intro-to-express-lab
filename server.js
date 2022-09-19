@@ -1,7 +1,8 @@
 // import modules
 
 import express from 'express'
-
+import validator from 'validator'
+import { students } from './data/students-data.js'
 
 
 // create express app
