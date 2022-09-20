@@ -9,13 +9,14 @@ import { students } from './data/students-data.js'
 
 const app = express()
 
+
 // configure the app (app.set)
 
 app.set('view engine', 'ejs')
 
-
 // Mount middleware
 
+app.use(express.static('public'))
 
 
 // Mount routes
